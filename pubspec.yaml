@@ -1,0 +1,41 @@
+name: SEBA
+description: SEBA — AI Chatbot like Grok, Gemini, GPT
+publish_to: 'none'
+version: 1.0.0+1
+
+# This is the ONLY environment line that works perfectly on FlutterLab.io today
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0          # ← ADD THIS
+  flutter_dotenv: ^5.1.0
+  # THEMING & COLORS (your main request — vibrant & dynamic)
+  flex_color_scheme: ^7.3.1          # Perfect Material 3 themes
+  adaptive_theme: ^3.4.0             # Dark / Light / System toggle with animation
+
+  # EYE-CANDY PACKAGES (all working on FlutterLab)
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0               # Orbitron, Poppins, etc.
+  shimmer: ^3.0.0                    # Shimmer loading effects
+  animate_do: ^3.3.4                 # FadeIn, BounceIn, etc.
+  lottie: ^2.7.0                     # Beautiful JSON animations
+  glassmorphism: ^3.0.0              # Frosted glass chat bubbles
+  awesome_dialog: ^3.1.0             # Stunning animated dialogs
+  flutter_glass_morphism: ^1.0.2
+  linear_gradient: ^0.1.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0              # Safe version — no super-parameters errors
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment when you add assets later
+  # assets:
+  #   - assets/animations/
