@@ -6,7 +6,7 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:http/http.dart' as http;
 
 // YOUR API KEY — WORKS WITH THE EXACT URL YOU SPECIFIED
-const String GEMINI_API_KEY = "AIzaSyCatl_KnHRGst7NSzzHjojXDSTlLVNrffw";
+final String apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
 
 class ChatPage extends StatefulWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -310,3 +310,4 @@ class _ChatPageState extends State<ChatPage> {
     );
   }
 }
+
