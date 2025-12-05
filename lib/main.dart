@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'screens/home_page.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 // ←←←←← PUT YOUR NEW API KEY HERE (39 characters) ←←←←←
-const String GEMINI_API_KEY = "AIzaSyCatl_KnHRGst7NSzzHjojXDSTlLVNrffw";
+final String apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
 // Replace the above with your NEW key from: https://aistudio.google.com/app/apikey
 
 void main() {
+  await dotenv.load(fileName: ".env");
   runApp(const SEBAApp());
 }
 
