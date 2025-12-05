@@ -26,7 +26,7 @@ class _ChatPageState extends State<ChatPage> {
     super.initState();
     _messages.add({
       'text':
-          'আসসালামু আলাইকুম! আমি SEBA — Sher-E-Bangla Artificial।\nআপনাকে কীভাবে সাহায্য করতে পারি?',
+          'I am SEBA: Sher-E-Bangla Artificial।\n How can I help you?',
       'isUser': false,
     });
   }
@@ -310,4 +310,5 @@ class _ChatPageState extends State<ChatPage> {
     );
   }
 }
+
 
